@@ -1,0 +1,17 @@
+<div class="employee-panel">
+  <h1> {{employeeInfo.name}} </h1>
+  <h4> {{employeeInfo.job}} </h4>
+  <div class="hr-left"></div>
+  <p>
+  {{employeeInfo.description}}
+  </p>
+</div>
+
+<div class="employee-panel">
+  <h1> Mis habilidades </h1>
+  <div ng-repeat="skill for employeeInfo.skills" class="info-grp">
+    <button class="btn btn-primary" disabled="" type="button">
+      {{skill}}
+    </button>
+  </div>
+</div>
