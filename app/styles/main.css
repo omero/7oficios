@@ -119,6 +119,9 @@ i {
   color: #3498db; 
 }
 
+.box-top {
+  padding-top: 70px;
+}
 
 /* HeaderWrap */
 #headerwrap {
