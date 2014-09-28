@@ -4,7 +4,7 @@ angular
   .module('7oficiosApp', [])
   .factory('employeeFact', ['$http', function($http) {
 
-    var urlBase = 'http://battlehackoficios-pocketlab.rhcloud.com/api/workers.json';
+    var urlBase = 'http://battlehackoficios-pocketlab.rhcloud.com/api/workers';
     var employeeFact = {};
 
     employeeFact.getEmployees = function(){
@@ -12,9 +12,9 @@ angular
       return $http.get(urlBase);
     };
 
-    employeeFact.getEmployee = function(id){
+    /*employeeFact.getEmployee = function(id){
       return $http.get(urlBase + '/' + id);
-    };
+    };*/
 
     return employeeFact;
 
