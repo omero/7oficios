@@ -1,8 +1,50 @@
 <div class="container" ng-controller="employeeDetailController">
   <div class="row box-top">
-    <div class="col-lg-12">
-      <h1>Top Employee</h1>
-      {{ emps }}
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+      <div class="user">
+        <div class="text-center">
+          <img class="img-circle" src="http://bismillahlab.web.id/themes/marinka/1.0/img/user/user.jpg" alt="">
+        </div>
+
+        <div class="user-head">
+          <h1>{{user.name}} {{user.lastname}}</h1>
+          <div class="hr-center"></div>
+          <h5>{{user.job}}</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+      <div class="main-content">
+        <div class="timeline">
+          <div class="id-profile">
+            <h1 class="timeline-head"></h1>
+          </div>
+          <div class="profile">
+            <div class="timeline-panel">
+              <h1>Bio</h1>
+              <hr>
+              <h4>lalalala</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="timeline-panel">
+              <h1>Habilidades</h1>
+              <hr>
+              <div class="btn-group">
+                <button class="btn btn-primary">Name</button>
+                <button class="btn btn-default">Lorem Ipsum</button>
+              </div>
+
+              <div class="btn-group">
+                <button class="btn btn-primary">Name</button>
+                <button class="btn btn-default">Lorem Ipsum</button>
+              </div>
+            </div>
+          </div>
+          <div class="personal-info"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

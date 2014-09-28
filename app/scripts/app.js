@@ -23,7 +23,7 @@ angular
         controller: 'employeeController'
       })
       .when('/employee/:nid', {
-        templateUrl: 'views/top-employee.html',
+        templateUrl: 'views/employee-detail.html',
         controller: 'employeeDetailController'
       })
       .when('/catalog', {

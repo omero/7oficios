@@ -8,10 +8,10 @@ angular.module('7oficiosApp')
   });
 })
 .controller('employeeDetailController', function ($scope, $http, $routeParams) {
-  var uriUser = 'http://battlehackoficios-pocketlab.rhcloud.com/api/workers.json?nid='+$routeParams.nid+'.json';
+  var uriUser = 'http://battlehackoficios-pocketlab.rhcloud.com/api/workers.json?nid='+$routeParams.nid;
   $http.get(uriUser).
   success(function(data){
-    $scope.user = data;
+    $scope.user = data[0];
   });
 });
 
