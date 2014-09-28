@@ -1,75 +1,187 @@
-<!doctype html>
-<html class="no-js">
+<!DOCTYPE html>
+<html lang="en" ng-app="7oficiosApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="7oficiosApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>7Oficios</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- Fonts from Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+  </head>
 
-    <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">7oficios</h3>
-      </div>
+  <body>
 
-      <div ng-view=""></div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>7oficios</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#top-employee">Empleado del mes</a></li>
+            <li><a href="#catalog">Catalogo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Lo que necesitas<br/>
+          y donde lo necesitas.</h1>  
+          <form class="form-inline row" role="form">
+            <div class="form-group col-lg-4">
+              <!-- <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Buscar"> -->
+              <select class="form-control">
+                <option value="default">Oficio</option>
+                <option>Oficio 1</option>
+                <option>Oficio 2</option>
+              </select>
+            </div>
+            <!-- <button type="submit" class="btn btn-warning btn-lg">Invite Me!</button> -->
+            <select class="form-control">
+              <option value="default">Lugar</option>
+              <option>Ciudad</option>
+              <option>Colonia</option>
+            </select>
+          </form>         
+        </div><!-- /col-lg-6 -->
+        <div class="col-lg-6">
+          <img class="img-responsive" src="img/7oficios-front.png" alt="">
+        </div><!-- /col-lg-6 -->
+        
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /headerwrap -->
+  
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <div class="container">
+      <div class="row mt">
+        <div class="col-lg-12">
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>  
+  <div class="container">
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h1>Lo que necesitas<br/>y donde lo necesitas.</h1>
+        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+      </div>
+    </div><!-- /row -->
+    
+    <div class="row mt centered">
+      <div class="col-lg-4">
+        <img src="assets/img/ser01.png" width="180" alt="">
+        <h4>1 - Browser Compatibility</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+      </div><!--/col-lg-4 -->
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+      <div class="col-lg-4">
+        <img src="assets/img/ser02.png" width="180" alt="">
+        <h4>2 - Email Campaigns</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 
-    <!-- build:js(.) scripts/oldieshim.js -->
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <![endif]-->
-    <!-- endbuild -->
+      </div><!--/col-lg-4 -->
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
+      <div class="col-lg-4">
+        <img src="assets/img/ser03.png" width="180" alt="">
+        <h4>3 - Gather Your Notes</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+
+      </div><!--/col-lg-4 -->
+    </div><!-- /row -->
+  </div><!-- /container -->
+
+  <div class="container">
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h1>Our Awesome Team.<br/>Design Lovers.</h1>
+        <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+      </div>
+    </div><!-- /row -->
+    
+    <div class="row mt centered">
+      <div class="col-lg-4">
+        <img class="img-circle" src="assets/img/pic1.jpg" width="140" alt="">
+        <h4>Michael Robson</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+      </div><!--/col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="img-circle" src="assets/img/pic2.jpg" width="140" alt="">
+        <h4>Pete Ford</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+      </div><!--/col-lg-4 -->
+
+      <div class="col-lg-4">
+        <img class="img-circle" src="assets/img/pic3.jpg" width="140" alt="">
+        <h4>Angelica Finning</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
+      </div><!--/col-lg-4 -->
+    </div><!-- /row -->
+  </div><!-- /container -->
+  
+  <div class="container">
+    <hr>
+    <div class="row centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg">Invite Me!</button>
+        </form>         
+      </div>
+      <div class="col-lg-3"></div>
+    </div><!-- /row -->
+    <hr>
+    <p class="centered">Created by BlackTie.co - Attribution License 3.0 - 2013</p>
+  </div><!-- /container -->
+  
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
-</body>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/top-employee.js"></script>
+    <script src="scripts/controllers/catalog.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+  </body>
 </html>
