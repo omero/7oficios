@@ -123,6 +123,38 @@ i {
   padding-top: 70px;
 }
 
+.user {
+  margin-top: 40px;
+}
+
+.user-head {
+  text-align: center;
+}
+
+.btn-group {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.hr-center {
+  height: 3px;
+  background-color: #3498DB;
+  width: 40%;
+  display: block;
+  margin: 0px auto;
+}
+.timeline-panel {
+  margin-top: 20px;
+  width: calc(100% - 75px);
+  float: left;
+  color: #34495E;
+  border: 1px solid #D4D4D4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.176);
+}
+
 /* HeaderWrap */
 #headerwrap {
   /* background: url(../img/bg01.jpg) no-repeat center top; */
